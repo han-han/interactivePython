@@ -54,9 +54,9 @@ def draw(canvas):
 frame = simplegui.create_frame("StopWatch", 300, 300)
 
 # register event handlers
-button1 = frame.add_button("Start", Start, 100)
-button2 = frame.add_button("Stop", Stop, 100)
-button3 = frame.add_button("Reset", Reset, 100)
+frame.add_button("Start", Start, 100)
+frame.add_button("Stop", Stop, 100)
+frame.add_button("Reset", Reset, 100)
 frame.set_draw_handler(draw)
 timer = simplegui.create_timer(100, tick)
 
